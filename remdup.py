@@ -1,0 +1,8 @@
+f=open('govlinks.txt','r')
+c=f.read()
+c=c.split('\n')
+f.close()
+c=list(set(c))
+f=open('govlinks.txt','a')
+f.write('\n'.join(c))
+f.close()
